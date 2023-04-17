@@ -11,6 +11,8 @@ The article page (`article.html`) displays a single article with a title, a date
 ## New Article Page
 The new article page (`new_article.html`) allows users to create a new article. It contains a form with fields for entering the title, and content of the article. Users can submit the form to add a new article to the website. The form uses JavaScript to validate user input and ensure that all required fields are filled out.
 
+## Visit the site
+https://mohammedalmaghlouth.github.io/Article/
 
 ## Technologies Used
 
