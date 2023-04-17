@@ -1,0 +1,573 @@
+
+/* general */
+    body {
+        margin:0px;
+        
+        font-family: Helvetica;
+    }
+    main > p {
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    button:hover , #like-plus:hover {
+        box-shadow: 5px 5px 0px #6d64ff;
+        cursor:pointer;
+        
+    }
+
+    
+
+   
+
+    footer, section {
+        clear: left;
+    }
+
+/* Index page design */ 
+
+
+header {
+    background-color: #efeffa;
+    height: 6em;
+    position: relative;
+}
+
+/* Tech Blog Icon */
+#index-button {
+    box-shadow:none;
+    /* button */
+    border: 3px solid #6d64ff;
+    border-radius: 2rem;
+    background-color: #efeffa;
+    /* Text */
+    font-size: 25px;
+    padding: 10px;
+    background: #6d64ff;
+    background: linear-gradient(to right, #6d64ff 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* total position */
+    position: absolute;
+    top: 25px;
+    left: 10em;
+}
+
+/* Language menu selection */
+    select {
+            height: 30px;
+            position: absolute;
+            top: 2em;
+            left: 80%;
+    }
+
+
+
+
+/* main stuff */
+
+        /* hero image */
+            #hero-image {
+                width: 960px;
+                height: 95vh;
+                
+            }
+
+            #hero-elements {
+                position: absolute;
+                top: 60%;
+                left: 48%;
+                width: 39em;;
+            }
+
+            #hero-elements p {
+                font-size: 23px;
+                font-weight: bold;
+            }
+
+            .black-button {
+
+                /* button */
+                border: 3px solid #6d64ff;
+                border-radius: 1rem;
+                background-color: #313042;
+                /* Text */
+                font-size: 18px;
+                padding: 18px;
+                color: white;
+                
+            
+            }
+            #black-button-article {
+                position: absolute;
+                bottom: 0.6em;
+                left: 5.5em;
+            }
+
+
+            
+
+        /* Sections design */
+            section {
+                height: 200px;
+                border-bottom: 3px solid #6d64ff;
+                border-left: 3px solid #6d64ff;
+                margin-bottom: 10px;
+                border-bottom-left-radius: 20px;
+                position: relative;
+            }
+
+            #long-section {
+                height: 230px;
+            }
+
+            #long-aside {
+                height: 200px;
+            }
+
+            aside {
+                
+                width: 70px;
+                height: 170px;
+                background-color: #efeffa;
+                padding: 5px;
+                float:left;
+                align-items: center;
+                margin: 10px;
+                padding:auto;
+                position: relative;
+                
+            }
+
+            aside hr{
+                border-bottom: 3px solid #6d64ff;
+                margin:1px;
+            }
+
+            aside p {
+                padding-left: 20%;
+                font-size:12px;
+                margin:0px;
+                font-weight: bold;
+                
+            }
+
+            article p {
+                color:#6d64ff;
+            }
+
+            .purple-button {
+
+                /* button */
+                border: 3px solid #313042;
+                border-radius: 1rem;
+                background-color:#6d64ff;
+                /* Text */
+                font-size: 18px;
+                padding: 18px;
+                color: #efeffa;
+                position: absolute;
+                bottom: 0.6em;
+                left: 13.5em;
+            
+            }
+
+            .red-button {
+
+                /* button */
+                border: 3px solid #6d64ff;
+                border-radius: 1rem;
+                background-color: #CF1512;
+                /* Text */
+                font-size: 18px;
+                padding: 18px;
+                color: white;
+                position: absolute;
+                bottom: 0.6em;
+                left: 19em;
+            
+            }
+            
+    /* footer */
+
+
+            footer {
+                background-color: #efeffa;
+                height: 3em;
+                position: relative;
+            }
+
+            footer p{
+                padding-left: 40%;
+                padding-top: 5px;
+                
+            }
+
+/* Article Page */
+
+            main > h1 {
+                font-size: 4em;
+            }
+
+            #written-by {
+                background-color:#efeffa;
+              
+                padding: 7px;
+                font-size: 16px;
+            }
+
+            main > h3 {
+                color:#6d64ff;
+            }
+
+            #like-plus {
+                background-color: #313042;
+                border: 3px solid #6d64ff;
+                border-radius: 10px;
+                position:fixed;
+                padding: 10px;
+                
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            #like-plus p {
+                margin:0px;
+                padding:0px;
+                color:#efeffe;
+                position: absolute;
+                right:0.3em;
+                bottom:0.1em;
+                font-size:13px;
+
+            }
+            table {
+                border-collapse: collapse;
+            }
+            th {
+                padding: 2px;
+                background-color: #efeffa;
+            }
+            td {
+                border: 2px solid #efeffa;
+                border-collapse: collapse;
+            }
+
+/* New Article page */
+
+            #create-button {
+                width: 100%;
+                
+            }
+
+            /* Make the text fields full width + adjust raious as required in annotated */
+            
+            #title, #author, #des, #con, #con_ar{
+                width: 100%;
+                border: 1px solid;
+                border-radius: 30px;
+                padding: 10px;
+            }
+    
+
+/* Responsive Setting */ 
+
+            
+            /* I got measures from the slides */ 
+            @media (min-width: 1200px){
+                main {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    border-radius: 3px;
+                } 
+            }
+            /* Responsive for tablets */ 
+            @media (max-width: 1199px) and (min-width: 600px){
+                main {
+                    margin: 2%;
+                    border-radius: 3px;
+                } 
+                #index-button {
+                    left: 20px;
+                }
+                select {
+                    right:20px;
+                }
+
+                header {
+                    width: 100%;
+                }
+
+                #hero-image {
+                    width: 700px;
+                    height: 50vh;
+                }
+
+                #hero-elements p {
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-right: 250px;
+                }
+
+                main > p{
+                    font-size: 2.5em;
+                }
+
+                section {
+                    height: 320px;
+                    padding:10px;
+                }
+
+                aside {
+                
+                    width: 250px;
+                    height: 70px;
+                    background-color: #efeffa;
+                    padding: 5px;
+                    float:none;
+                    align-items: center;
+                    padding:auto;
+                    position: absolute;
+                    bottom: 7px;
+
+                    
+                }
+
+                #aside-name {
+                    position: absolute;
+                    left: 30px;
+                    bottom: 30px;
+                }
+
+                #aside-like {
+                    position: absolute;
+                    left: 130px;
+                    bottom: 12px;
+                }
+
+                #num-likes {
+                    position: absolute;
+                    left: 180px;
+                    bottom: 35px;
+                    
+                }
+
+                aside > hr {
+                    rotate: 90deg;
+                    width: 60px;
+                    position:absolute;
+                    left: 95px;
+                    bottom: 35px;
+                    
+                }
+
+                #long-section {
+                    height: 400px
+                }
+    
+                #long-aside {
+                    height: 70px;
+                }
+
+                #black-button-article {
+                    left: 10px;
+                    bottom: 120px;
+                }
+                .red-button {
+                    left: 260px;
+                    bottom: 120px;
+                    
+                }
+                .purple-button {
+                    
+
+                    left: 160px;
+                    bottom: 120px;
+                }
+
+                footer p{
+                    padding-left: 10%;
+                    padding-top: 5px;
+                    
+                }
+
+                
+                #responsive-header {
+                    position: absolute;
+                    top: -130px;
+                    left: 0px;
+                    font-size: 10px;
+                   
+                }
+
+                #responsive-pheader {
+                    position: absolute;
+                    top: -70px;
+                    left: 0px;
+                    
+                    
+                }
+
+                #responsive-button {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    
+
+                }
+
+                .black-button {
+                    font-size: 15px;
+                }
+
+
+
+            }
+            /* Responsive for mobile */ 
+            @media (max-width: 599px){
+
+                main {
+                    margin: 2%;
+                    border-radius: 3px;
+                } 
+                #index-button {
+                    left: 20px;
+                    font-size:20px;
+                }
+                select {
+                    right:20px;
+                }
+
+                header {
+                    width: 100%;
+                }
+
+                #hero-image {
+                    width: 570px;
+                    height: 50vh;
+                }
+
+                #hero-elements p {
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-right: 400px;
+                }
+
+                
+
+                main > p{
+                    font-size: 2.5em;
+                }
+
+                section {
+                    height: 320px;
+                    padding:10px;
+                }
+
+                aside {
+                
+                    width: 250px;
+                    height: 70px;
+                    background-color: #efeffa;
+                    padding: 5px;
+                    float:none;
+                    align-items: center;
+                    padding:auto;
+                    position: absolute;
+                    bottom: 7px;
+
+                    
+                }
+
+                #aside-name {
+                    position: absolute;
+                    left: 30px;
+                    bottom: 30px;
+                }
+
+                #aside-like {
+                    position: absolute;
+                    left: 130px;
+                    bottom: 12px;
+                }
+
+                #num-likes {
+                    position: absolute;
+                    left: 180px;
+                    bottom: 35px;
+                    
+                }
+
+                aside > hr {
+                    rotate: 90deg;
+                    width: 60px;
+                    position:absolute;
+                    left: 95px;
+                    bottom: 35px;
+                    
+                }
+
+                #long-section {
+                    height: 400px
+                }
+    
+                #long-aside {
+                    height: 70px;
+                }
+
+                #black-button-article {
+                    left: 10px;
+                    bottom: 120px;
+                }
+                .red-button {
+                    left: 260px;
+                    bottom: 120px;
+                    
+                }
+                .purple-button {
+                    
+
+                    left: 160px;
+                    bottom: 120px;
+                }
+
+                footer p{
+                    padding-left: 10%;
+                    padding-top: 5px;
+                    
+                }
+
+
+                #responsive-header {
+                    position: absolute;
+                    top: -320px;
+                    left: -200px;
+                    font-size: 10px;
+                   
+                }
+
+                #responsive-pheader {
+                    position: absolute;
+                    top: -130px;
+                    left: 50px;
+                    
+                    
+                }
+
+                #responsive-button {
+                    position: absolute;
+                    top: -40px;
+                    left: 50px;
+                    
+
+                }
+
+                .black-button {
+                    font-size: 15px;
+                }
+                
+            } 
+            
+            
+/* When arabic selected */ 

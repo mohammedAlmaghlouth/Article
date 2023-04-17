@@ -1,0 +1,63 @@
+/* When arabic selected */ 
+
+main {
+    text-align: right;
+}
+#hero-image {
+    margin-left:200px;
+}
+section {
+    border-left:none;
+    border-right:3px solid #6d64ff;;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+}
+
+aside {
+    float:right;
+}
+
+#black-button-article {
+    position:absolute;
+    right: 120px;
+    left:800px;
+}
+.red-button {
+    right: 450px;
+    left:500px;
+    
+}
+.purple-button {
+    right: 300px;
+    left:650px;
+    
+}
+
+#like-plus {
+    
+    bottom: 1rem;
+    left: 1rem;
+    right:90%;
+}
+
+#nana {
+    clear: right;
+    
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li::after {
+    content: "• ";
+    text-align: right;
+    display: inline-block;
+    width: 1em;
+  }
+
+  .table-container {
+    float: right;
+    margin-left: 20px; /* add some space to the left of the table */
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    
+
+    <!--Integrate Froala-->
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    
+    <title>New Article</title>
+</head>
+<body onload="setLanguage(localStorage.getItem('language') || 'en')">
+    <header>
+        <!--Tech Blog Icon-->
+        <a href="index.html"><button id="index-button">Tech Blog</button></a>
+        <!--Menu box for languages-->
+        <select id="language-select" onchange="setLanguage(this.value)">
+            <option id="en" value="en">English</option>
+            <option id="ar" value="ar">Arabic</option>
+          </select>
+
+    </header>
+    
+    
+    
+    <main>
+        <!--Below header elements-->
+        
+            <h1>Create an article</h1>
+        
+        
+        <form id="form" action="index.html" method="GET" >
+                <!--Article Title Input-->
+                <article>
+                    <label for="title">Title</label>
+                    <br>
+                    <input type="text" id="title" name="title" required>
+                    <br><br>
+                </article>
+
+                <!--Author Name Input-->
+                <article>
+                    <label for="author">Author</label>
+                    <br>
+                    <input type="text" id="author" name="Author" value="Admin" required>
+                    <br><br>
+                </article>
+                    
+                <!--Article description Input-->    
+                <article>
+                    <label for="des">Description</label>
+                    <br>
+                    <textarea id="des" name="des" rows="3" cols="20" required></textarea>
+                    <br><br>
+                </article>
+                
+                <!--Article Content Input-->
+                <article>
+                    <label for="con">Content</label>
+                    <br>
+                    <textarea id="con" name="con" rows="10" cols="20" ></textarea>
+                    <br><br>
+                </article>
+                <br>
+                <!--Article Arabic Content Input-->
+                <article>
+                    <label for="con_ar">Arabic Content</label>
+                    <br>
+                    <textarea id="con_ar" name="con_ar" rows="10" cols="20" ></textarea>
+                    <br><br>
+                </article>
+                <div>
+                    <button id="create-button" class ="black-button" type="submit" onclick="addArticle()">Create</button>
+                </div>
+
+        </form>
+    </main>
+    
+
+
+    <!-- End footer -->
+    <footer>
+        <p>© The <a href="index.html"><button id="index-button" style ="position:static;font-size: 13px">Tech Blog</button></a> 2023 created by 222-SWE-363 Student</p>  
+    </footer> 
+
+        
+    
+
+    <script src="forntendJS.js"></script>
+</body>
+</html>
+

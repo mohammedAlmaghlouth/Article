@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+         
+    <title>index</title>
+</head>
+<body onload="setLanguage(localStorage.getItem('language') || 'en')">
+    
+    <header>
+        <!--Tech Blog Icon-->
+        <a href="index.html"><button id="index-button">Tech Blog</button></a>
+        <!--Menu box for languages-->
+        
+        <select id="language-select" onchange="setLanguage(this.value)">
+            <option id="en" value="en">English</option>
+            <option id="ar" value="ar">Arabic</option>
+          </select>
+    </header>
+
+    <main id="main_tag">
+        <!---->
+        <!--hero image and its elements -->
+        <div>
+            <img id="hero-image" src="hero.png" alt="hero image">
+
+            <div id="hero-elements">
+                <br>
+                <p id="responsive-header"> Welcome to The <a href="index.html"><button id="index-button" style ="position:static;">Tech Blog</button></a> ... </p>
+                <p id="responsive-pheader" > The best place to share your knowledge and make the world better</p>
+                <a id="responsive-button" href="new_article.html"><button class="black-button">Create an Article</button></a>
+                
+            </div>
+            
+        </div>
+
+        
+        <p>All Technical Articles</p>
+        <!--HTML Intro. section-->
+        <section id="admin_section">
+            <aside>
+                <img id='aside-icon' src="editor-icons-2.png" alt="editor image">
+                <p id='aside-name'>Admin</p>
+                <hr>
+                <img id='aside-like' src="heart-suit.png" alt="editor image">
+                <p id='num-likes' style="padding-left: 28px;">5</p>
+            </aside>
+            <article>
+                <br>
+                <h4>HTML Introduction</h4>
+                <p>HTML is the standard markup language for creating Web pages.</p>
+                <br>
+                <a href="article.html"><button class ="black-button" id="black-button-article">Read Now</button></a>
+                <button class="purple-button">Edit</button> 
+                <button id="admin_button" class="red-button" onclick="deleteArticle('#admin_section')">Delete</button>
+                <br>
+            </article>
+            
+        </section>
+        
+    
+        <!--Hyperlink section-->
+        <section id="ali_section">
+
+            <aside>
+                <img id='aside-icon' src="editor-icons-2.png" alt="editor image">
+                <p id='aside-name'>Ali</p>
+                <hr>
+                <img id='aside-like' src="heart-suit.png" alt="editor image">
+                <p id='num-likes' style="padding-left: 28px;">0</p>
+            </aside>
+            <article>
+                <br>
+                <h4>Creating hyperlinks</h4>
+                <p>Hyperlinks are really important -- they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.</p>
+                <br>
+                <a href="article.html"><button class ="black-button" id="black-button-article">Read Now</button></a>
+                <button class="purple-button">Edit</button> 
+                <button class="red-button" onclick="deleteArticle('#ali_section')">Delete</button>
+                <br>
+            </article>
+            
+        </section>
+        
+    
+        <!--Tables section-->
+        <section id="long-section" >
+            <aside id="long-aside" >
+                <img id='aside-icon' src="editor-icons-2.png" alt="editor image">
+                <p id='aside-name'>Hassan</p>
+                <hr>
+                <img id='aside-like' src="heart-suit.png" alt="editor image">
+                <p id='num-likes' style="padding-left: 28px;">0</p>
+                <br>
+            </aside>
+            <article>
+                <br>
+                <h4>HTML tables</h4>
+                <p>
+                    A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.
+                </p>
+                <br>
+                <a href="article.html"><button class ="black-button" id="black-button-article">Read Now</button></a>
+                <button class="purple-button">Edit</button> <button id="long_button" class="red-button" onclick="deleteArticle('#long-section')">Delete</button>
+               <br>
+            </article>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>© The <a href="index.html"><button id="index-button" style ="position:static;font-size: 13px">Tech Blog</button></a> 2023 created by 222-SWE-363 Student</p>  
+    </footer>   
+    
+    
+    <script src="forntendJS.js"></script>
+</body>
+</html>
